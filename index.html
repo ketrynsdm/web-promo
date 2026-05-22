@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Descontou Promo | Achadinhos Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>
+      (function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = true;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = true;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+
+      fbq('init', '979223871656650');
+      fbq('track', 'PageView');
+    </script>
+    <style>
+      @import url('https://api.fontshare.com/v2/css?f[]=gambetta@400,500,600&f[]=satoshi@400,500,700&display=swap');
+
+      :root {
+        --petrol: #28453f;
+        --gold: #c8a46a;
+        --beige: #f5efe7;
+        --white: #faf9f6;
+      }
+
+      body {
+        font-family: 'Satoshi', sans-serif;
+        background-color: var(--white);
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .serif {
+        font-family: 'Gambetta', serif;
+      }
+
+      .glass {
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .glow-button {
+        box-shadow: 0 10px 30px -10px rgba(40, 69, 63, 0.4);
+        transition: all 0.3s ease;
+      }
+
+      .glow-button:active {
+        transform: scale(0.96);
+        box-shadow: 0 5px 15px -5px rgba(40, 69, 63, 0.3);
+      }
+
+      .hero-cta {
+        background: linear-gradient(135deg, #28453f 0%, #356056 100%);
+        border: 2px solid rgba(200, 164, 106, 0.45);
+        box-shadow:
+          0 14px 35px -14px rgba(40, 69, 63, 0.75),
+          0 0 0 6px rgba(200, 164, 106, 0.15);
+      }
+
+      .hero-cta iconify-icon {
+        filter: drop-shadow(0 2px 8px rgba(255, 255, 255, 0.35));
+      }
+
+      .hero-cta-wrap {
+        animation: ctaPulse 2.2s ease-in-out infinite;
+      }
+
+      @keyframes ctaPulse {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-2px);
+        }
+      }
+
+      .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=979223871656650&ev=PageView&noscript=1"
+    /></noscript>
+    <div class="w-full min-h-screen flex flex-col overflow-x-hidden">
+      <!-- Floating Header (Logo) -->
+      <header class="shrink-0 pt-10 px-6 flex flex-col items-center gap-2 z-50">
+        <div class="flex flex-col items-center">
+          <img
+            src="images/logo.png"
+            alt="Descontou Promo"
+            class="w-[160px] h-auto object-contain"
+          />
+        </div>
+      </header>
+
+      <main class="flex-1 flex flex-col">
+        <!-- Hero Section -->
+        <section class="px-6 pt-6 pb-6 text-center animate-fade-up">
+          <h2
+            class="serif text-[42px] leading-[1.1] tracking-tight font-medium mb-4"
+          >
+            <span class="text-[#28453F]">Achadinhos que</span><br />
+            <span class="text-[#C8A46A]">transformam sua casa ✨</span>
+          </h2>
+          <p
+            class="text-[#4A4A4A] text-lg max-w-[280px] mx-auto leading-relaxed"
+          >
+            Produtos úteis, bonitos e promoções reais todos os dias.
+          </p>
+
+          <div
+            class="mt-6 max-w-[360px] mx-auto hero-cta-wrap animate-fade-up"
+            style="animation-delay: 0.08s"
+          >
+            <a
+              href="#"
+              id="hero-cta-link"
+              data-lead-content="Hero CTA WhatsApp"
+              class="hero-cta flex items-center justify-center gap-3 text-white py-5 px-6 rounded-2xl w-full glow-button font-black text-[13px] tracking-[0.08em] uppercase"
+            >
+              <iconify-icon
+                icon="ic:baseline-whatsapp"
+                class="text-2xl"
+              ></iconify-icon>
+              Entrar no Grupo do WhatsApp
+            </a>
+            <p class="mt-3 text-[11px] text-[#6A6A6A] font-medium">
+              Receba promoções todos os dias no seu WhatsApp
+            </p>
+          </div>
+        </section>
+
+        <!-- Hero Image Frame -->
+        <section
+          class="px-6 mb-10 animate-fade-up"
+          style="animation-delay: 0.1s"
+        >
+          <div
+            class="relative rounded-[40px] overflow-hidden aspect-[4/5] shadow-2xl"
+          >
+            <img
+              src="images/background.png"
+              alt="Home Decor"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"
+            ></div>
+          </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="px-6 py-8 bg-[#F5EFE7]/50 space-y-4">
+          <div class="flex flex-col gap-4">
+            <div
+              class="glass p-5 rounded-[28px] flex items-center gap-4 animate-fade-up"
+              style="animation-delay: 0.2s"
+            >
+              <div
+                class="w-12 h-12 rounded-2xl bg-[#28453F]/10 flex items-center justify-center shrink-0"
+              >
+                <iconify-icon
+                  icon="ph:tag-light"
+                  class="text-2xl text-[#28453F]"
+                ></iconify-icon>
+              </div>
+              <div>
+                <h3 class="font-bold text-[#28453F]">Promos selecionadas</h3>
+                <p class="text-sm text-[#6A6A6A]">
+                  Apenas o melhor da decoração
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="glass p-5 rounded-[28px] flex items-center gap-4 animate-fade-up"
+              style="animation-delay: 0.3s"
+            >
+              <div
+                class="w-12 h-12 rounded-2xl bg-[#C8A46A]/10 flex items-center justify-center shrink-0"
+              >
+                <iconify-icon
+                  icon="ph:house-line-light"
+                  class="text-2xl text-[#C8A46A]"
+                ></iconify-icon>
+              </div>
+              <div>
+                <h3 class="font-bold text-[#28453F]">
+                  Achadinhos para sua casa
+                </h3>
+                <p class="text-sm text-[#6A6A6A]">
+                  Curadoria premium de objetos
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="glass p-5 rounded-[28px] flex items-center gap-4 animate-fade-up"
+              style="animation-delay: 0.4s"
+            >
+              <div
+                class="w-12 h-12 rounded-2xl bg-[#28453F]/10 flex items-center justify-center shrink-0"
+              >
+                <iconify-icon
+                  icon="ph:shopping-cart-simple-light"
+                  class="text-2xl text-[#28453F]"
+                ></iconify-icon>
+              </div>
+              <div>
+                <h3 class="font-bold text-[#28453F]">Ofertas reais</h3>
+                <p class="text-sm text-[#6A6A6A]">
+                  Economia de verdade garantida
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Social Proof -->
+        <section class="px-6 py-16 text-center">
+          <h4 class="serif text-2xl text-[#28453F] mb-6">
+            Mais economia para sua casa
+          </h4>
+
+          <div class="flex items-center justify-center -space-x-3 mb-4">
+            <img
+              src="https://i.pravatar.cc/100?u=1"
+              class="w-10 h-10 rounded-full border-2 border-white shadow-sm"
+              alt="Avatar"
+            />
+            <img
+              src="https://i.pravatar.cc/100?u=2"
+              class="w-10 h-10 rounded-full border-2 border-white shadow-sm"
+              alt="Avatar"
+            />
+            <img
+              src="https://i.pravatar.cc/100?u=3"
+              class="w-10 h-10 rounded-full border-2 border-white shadow-sm"
+              alt="Avatar"
+            />
+            <img
+              src="https://i.pravatar.cc/100?u=4"
+              class="w-10 h-10 rounded-full border-2 border-white shadow-sm"
+              alt="Avatar"
+            />
+            <div
+              class="w-10 h-10 rounded-full bg-[#C8A46A] border-2 border-white flex items-center justify-center text-[10px] text-white font-bold shadow-sm"
+            >
+              +5k
+            </div>
+          </div>
+
+          <p class="text-[#6A6A6A] font-medium mb-12">
+            <span class="text-[#28453F] font-bold">+5 mil pessoas</span>
+            recebendo promoções diariamente
+          </p>
+
+          <!-- Testimonials -->
+          <div class="space-y-6">
+            <div
+              class="bg-white border border-[#F5EFE7] p-6 rounded-3xl shadow-sm"
+            >
+              <div class="flex justify-center gap-1 mb-3">
+                <iconify-icon
+                  icon="ph:star-fill"
+                  class="text-[#C8A46A]"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ph:star-fill"
+                  class="text-[#C8A46A]"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ph:star-fill"
+                  class="text-[#C8A46A]"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ph:star-fill"
+                  class="text-[#C8A46A]"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ph:star-fill"
+                  class="text-[#C8A46A]"
+                ></iconify-icon>
+              </div>
+              <p class="text-[#28453F] italic text-sm">
+                "Economizei muito na decoração da minha sala. Os achadinhos são
+                de extremo bom gosto!"
+              </p>
+              <p
+                class="mt-3 text-[10px] uppercase tracking-widest text-[#C8A46A] font-bold"
+              >
+                Juliana M.
+              </p>
+            </div>
+
+            <div
+              class="bg-white border border-[#F5EFE7] p-6 rounded-3xl shadow-sm"
+            >
+              <div class="flex justify-center gap-1 mb-3">
+                <iconify-icon
+                  icon="ph:star-fill"
+                  class="text-[#C8A46A]"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ph:star-fill"
+                  class="text-[#C8A46A]"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ph:star-fill"
+                  class="text-[#C8A46A]"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ph:star-fill"
+                  class="text-[#C8A46A]"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ph:star-fill"
+                  class="text-[#C8A46A]"
+                ></iconify-icon>
+              </div>
+              <p class="text-[#28453F] italic text-sm">
+                "Todo dia aparece algum achadinho bom. Já comprei vários itens
+                que parecem de loja cara."
+              </p>
+              <p
+                class="mt-3 text-[10px] uppercase tracking-widest text-[#C8A46A] font-bold"
+              >
+                Ricardo S.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Final CTA / Footer Message -->
+        <section
+          class="mt-auto px-6 pt-12 pb-16 bg-[#28453F] rounded-t-[50px] text-center"
+        >
+          <p class="serif text-2xl text-white/90 mb-8 max-w-[280px] mx-auto">
+            Entre agora e aproveite antes das melhores ofertas acabarem.
+          </p>
+          <a
+            href="#"
+            id="footer-cta-link"
+            data-lead-content="Footer CTA WhatsApp"
+            class="flex items-center justify-center gap-3 bg-white text-[#28453F] py-5 px-6 rounded-2xl w-full font-black text-sm tracking-[0.1em] uppercase shadow-xl active:scale-95 transition-transform"
+          >
+            Quero entrar agora
+            <iconify-icon icon="ph:arrow-right-bold"></iconify-icon>
+          </a>
+          <div class="mt-10 flex flex-col items-center opacity-40">
+            <div
+              class="flex items-center gap-1 text-white text-[10px] uppercase tracking-[0.3em] font-bold"
+            >
+              Descontou Promo
+            </div>
+            <p class="text-white/60 text-[8px] mt-2">
+              Curadoria Premium de Achadinhos para Casa
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <!-- Mobile Safe Area Padding -->
+      <div class="h-[34px] bg-[#28453F] shrink-0"></div>
+    </div>
+    <script>
+      const WHATSAPP_GROUP_URL =
+        'https://chat.whatsapp.com/CHWh8QapYG62TUVAEl6dyx?mode=gi_t';
+
+      function trackLeadAndRedirect(event, contentName) {
+        const target = event.currentTarget;
+        const destinationUrl = target && target.href;
+        const leadSource =
+          contentName ||
+          (target && target.dataset.leadContent) ||
+          'WhatsApp CTA';
+
+        if (typeof fbq === 'function') {
+          fbq('track', 'CompleteRegistration', {
+            content_name: leadSource,
+            destination: 'whatsapp_group',
+          });
+
+          fbq('trackCustom', 'LeadButtonClick', {
+            content_name: leadSource,
+            destination: 'whatsapp_group',
+          });
+        }
+
+        if (
+          destinationUrl &&
+          destinationUrl !== '#' &&
+          !destinationUrl.endsWith('/#')
+        ) {
+          event.preventDefault();
+          setTimeout(function () {
+            window.location.href = destinationUrl;
+          }, 700);
+        }
+      }
+
+      const heroCta = document.getElementById('hero-cta-link');
+      const footerCta = document.getElementById('footer-cta-link');
+
+      if (heroCta) {
+        heroCta.href = WHATSAPP_GROUP_URL;
+      }
+
+      if (footerCta) {
+        footerCta.href = WHATSAPP_GROUP_URL;
+      }
+
+      if (heroCta) {
+        heroCta.addEventListener('click', function (event) {
+          trackLeadAndRedirect(event, 'Hero CTA WhatsApp');
+        });
+      }
+
+      if (footerCta) {
+        footerCta.addEventListener('click', function (event) {
+          trackLeadAndRedirect(event, 'Footer CTA WhatsApp');
+        });
+      }
+    </script>
+  </body>
+</html>

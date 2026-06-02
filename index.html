@@ -1,468 +1,197 @@
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <title>Descontou Promo | Achadinhos Premium</title>
+
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo Old Money | Acesso VIP</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script>
-      (function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = true;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = true;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        'script',
-        'https://connect.facebook.net/en_US/fbevents.js'
-      );
-
-      fbq('init', '961455246713442');
-      fbq('track', 'PageView');
-    </script>
     <style>
-      @import url('https://api.fontshare.com/v2/css?f[]=gambetta@400,500,600&f[]=satoshi@400,500,700&display=swap');
+        @import url('https://api.fontshare.com/v2/css?f[]=gambetta@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap');
 
-      :root {
-        --petrol: #28453f;
-        --gold: #c8a46a;
-        --beige: #f5efe7;
-        --white: #faf9f6;
-      }
-
-      body {
-        font-family: 'Satoshi', sans-serif;
-        background-color: var(--white);
-        -webkit-tap-highlight-color: transparent;
-      }
-
-      .serif {
-        font-family: 'Gambetta', serif;
-      }
-
-      .glass {
-        background: rgba(255, 255, 255, 0.4);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
-
-      .glow-button {
-        box-shadow: 0 10px 30px -10px rgba(40, 69, 63, 0.4);
-        transition: all 0.3s ease;
-      }
-
-      .glow-button:active {
-        transform: scale(0.96);
-        box-shadow: 0 5px 15px -5px rgba(40, 69, 63, 0.3);
-      }
-
-      .hero-cta {
-        background: linear-gradient(135deg, #28453f 0%, #356056 100%);
-        border: 2px solid rgba(200, 164, 106, 0.45);
-        box-shadow:
-          0 14px 35px -14px rgba(40, 69, 63, 0.75),
-          0 0 0 6px rgba(200, 164, 106, 0.15);
-      }
-
-      .hero-cta iconify-icon {
-        filter: drop-shadow(0 2px 8px rgba(255, 255, 255, 0.35));
-      }
-
-      .hero-cta-wrap {
-        animation: ctaPulse 2.2s ease-in-out infinite;
-      }
-
-      @keyframes ctaPulse {
-        0%,
-        100% {
-          transform: translateY(0);
+        :root {
+            --old-money-green: #0a1a12;
+            --old-money-gold: #d4af37;
+            --whatsapp-green: #25D366;
         }
-        50% {
-          transform: translateY(-2px);
-        }
-      }
 
-      .animate-fade-up {
-        animation: fadeUp 0.8s ease-out forwards;
-      }
+        body {
+            font-family: 'Satoshi', sans-serif;
+            background-color: #0a1a12;
+            color: white;
+            -webkit-font-smoothing: antialiased;
+        }
 
-      @keyframes fadeUp {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
+        .font-serif {
+            font-family: 'Gambetta', serif;
         }
-        to {
-          opacity: 1;
-          transform: translateY(0);
+
+        .gold-glow {
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
         }
-      }
+
+        .whatsapp-btn-shadow {
+            box-shadow: 0 4px 14px 0 rgba(37, 211, 102, 0.39);
+        }
+
+        .gold-border {
+            border: 1px solid rgba(212, 175, 55, 0.6);
+        }
+
+        /* Custom snap scrolling for categories */
+        .snap-x {
+            scroll-snap-type: x mandatory;
+        }
+        .snap-center {
+            scroll-snap-align: center;
+        }
     </style>
-  </head>
-  <body>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=961455246713442&ev=PageView&noscript=1"
-    /></noscript>
-    <div class="w-full min-h-screen flex flex-col overflow-x-hidden">
-      <!-- Floating Header (Logo) -->
-      <header class="shrink-0 pt-10 px-6 flex flex-col items-center gap-2 z-50">
-        <div class="flex flex-col items-center">
-          <img
-            src="images/logo.png"
-            alt="Descontou Promo"
-            class="w-[160px] h-auto object-contain"
-          />
-        </div>
-      </header>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '961455246713442');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=961455246713442&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+    <div class="w-full h-screen flex flex-col bg-[#0a1a12]">
 
-      <main class="flex-1 flex flex-col">
-        <!-- Hero Section -->
-        <section class="px-6 pt-6 pb-6 text-center animate-fade-up">
-          <h2
-            class="serif text-[42px] leading-[1.1] tracking-tight font-medium mb-4"
-          >
-            <span class="text-[#28453F]">Achadinhos que</span><br />
-            <span class="text-[#C8A46A]">transformam sua casa ✨</span>
-          </h2>
-          <p
-            class="text-[#4A4A4A] text-lg max-w-[280px] mx-auto leading-relaxed"
-          >
-            Produtos úteis, bonitos e promoções reais todos os dias.
-          </p>
+        <main class="flex-1 overflow-y-auto">
+            <!-- Hero Section -->
+            <section class="relative h-[80vh] flex flex-col justify-end overflow-hidden pt-14">
+                <div class="absolute inset-0 z-0">
+                    <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/uploads/364ea1d4-f318-4736-ace0-eccf7a8d3577/1780429863344-39bdb84d/anuncio_3.png" alt="Old Money Hero" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0a1a12] via-transparent to-black/30"></div>
+                </div>
 
-          <div
-            class="mt-6 max-w-[360px] mx-auto hero-cta-wrap animate-fade-up"
-            style="animation-delay: 0.08s"
-          >
-            <a
-              href="#"
-              id="hero-cta-link"
-              data-lead-content="Hero CTA WhatsApp"
-              class="hero-cta flex items-center justify-center gap-3 text-white py-5 px-6 rounded-2xl w-full glow-button font-black text-[13px] tracking-[0.08em] uppercase"
-            >
-              <iconify-icon
-                icon="ic:baseline-whatsapp"
-                class="text-2xl"
-              ></iconify-icon>
-              Entrar no Grupo do WhatsApp
-            </a>
-            <p class="mt-3 text-[11px] text-[#6A6A6A] font-medium">
-              Receba promoções todos os dias no seu WhatsApp
-            </p>
-          </div>
-        </section>
+                <div class="relative z-10 p-6 pb-12 space-y-4">
+                    
+                    <h1 class="text-4xl font-serif leading-tight">
+                        Luxo Atemporal,<br>
+                        <span class="text-[#d4af37]" style="border-radius: 24px; background-color: rgba(51, 51, 51, 0);">Preço Acessível.</span>
+                    </h1>
+                    <p class="text-white text-sm max-w-[280px] font-bold leading-relaxed italic">
+                        O estilo definitivo para o homem que entende que a elegância é o melhor investimento.
+                    </p>
+                    
+                    <a 
+                        href="https://chat.whatsapp.com/KcXwQNigNwMAhQdDre3S5d?s=cl&amp;p=a&amp;ilr=2" 
+                        id="cta-hero-whatsapp" 
+                        onclick="fbq('track', 'CompleteRegistration');" 
+                        class="flex items-center gap-4 bg-[#25D366] p-4 rounded-xl whatsapp-btn-shadow group active:scale-[0.98] transition-transform" 
+                        style="background-color: rgb(30, 170, 81); border-radius: 16px;"
+                    >
+                        <div class="w-12 h-12 bg-white flex items-center justify-center rounded-lg" style="width: 20px; height: 24px;">
+                            <iconify-icon icon="logos:whatsapp-icon" class="text-2xl"></iconify-icon>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-sm font-bold uppercase tracking-widest text-white">Entre no Grupo</span>
+                            <span class="text-[10px] text-white/90 uppercase tracking-tighter" style="font-weight: 700;">Acesso VIP &amp; Ofertas Exclusivas</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
 
-        <!-- Hero Image Frame -->
-        <section
-          class="px-6 mb-10 animate-fade-up"
-          style="animation-delay: 0.1s"
-        >
-          <div
-            class="relative rounded-[40px] overflow-hidden aspect-[4/5] shadow-2xl"
-          >
-            <img
-              src="images/background.png"
-              alt="Home Decor"
-              class="absolute inset-0 w-full h-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"
-            ></div>
-          </div>
-        </section>
+            <!-- Value Props -->
+            <section class="bg-[#050d09] py-8 px-6 grid grid-cols-2 gap-4 border-y border-white/5">
+                <div class="flex flex-col gap-2">
+                    <iconify-icon icon="lucide:gem" class="text-[#d4af37] text-xl"></iconify-icon>
+                    <h3 class="text-xs font-bold uppercase tracking-wider">Marcas de Elite</h3>
+                    <p class="text-[10px] text-white/40">Apenas as marcas mais prestigiadas.</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <iconify-icon icon="lucide:trending-down" class="text-[#d4af37] text-xl"></iconify-icon>
+                    <h3 class="text-xs font-bold uppercase tracking-wider">Preço Justo</h3>
+                    <p class="text-[10px] text-white/40">O luxo que cabe no seu planejamento.</p>
+                </div>
+            </section>
 
-        <!-- Features Grid -->
-        <section class="px-6 py-8 bg-[#F5EFE7]/50 space-y-4">
-          <div class="flex flex-col gap-4">
-            <div
-              class="glass p-5 rounded-[28px] flex items-center gap-4 animate-fade-up"
-              style="animation-delay: 0.2s"
-            >
-              <div
-                class="w-12 h-12 rounded-2xl bg-[#28453F]/10 flex items-center justify-center shrink-0"
-              >
-                <iconify-icon
-                  icon="ph:tag-light"
-                  class="text-2xl text-[#28453F]"
-                ></iconify-icon>
-              </div>
-              <div>
-                <h3 class="font-bold text-[#28453F]">Promos selecionadas</h3>
-                <p class="text-sm text-[#6A6A6A]">
-                  Apenas o melhor da decoração
+            <!-- Categories Grid -->
+            <section class="p-6">
+                <div class="flex items-end justify-between mb-6">
+                    <div>
+                        <h2 class="text-2xl font-serif">Categorias</h2>
+                        <p class="text-[10px] uppercase tracking-[0.2em] text-[#d4af37] font-bold">Domine o estilo</p>
+                    </div>
+                    <a href="#" id="view-all-link" class="text-[10px] uppercase tracking-widest border-b border-[#d4af37] text-[#d4af37] pb-1">Ver Tudo</a>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <!-- Ternos -->
+                    <div class="relative aspect-[4/5] overflow-hidden rounded-lg group">
+                        <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/uploads/364ea1d4-f318-4736-ace0-eccf7a8d3577/1780433132997-00849a03/terno_2.png" alt="Ternos" class="w-full h-full object-cover grayscale-[30%]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        <div class="absolute bottom-3 left-3">
+                            <span class="text-xs font-serif">Ternos</span>
+                        </div>
+                    </div>
+                    <!-- Camisas -->
+                    <div class="relative aspect-[4/5] overflow-hidden rounded-lg group">
+                        <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/uploads/364ea1d4-f318-4736-ace0-eccf7a8d3577/1780432623162-380a9456/camisas_2.png" alt="Camisas" class="w-full h-full object-cover grayscale-[30%]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        <div class="absolute bottom-3 left-3">
+                            <span class="text-xs font-serif">Camisas</span>
+                        </div>
+                    </div>
+                    <!-- Sapatos -->
+                    <div class="relative aspect-[4/5] overflow-hidden rounded-lg group">
+                        <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/uploads/364ea1d4-f318-4736-ace0-eccf7a8d3577/1780432446853-c2cb0bd2/sapato_2.png" alt="Sapatos" class="w-full h-full object-cover grayscale-[30%]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        <div class="absolute bottom-3 left-3">
+                            <span class="text-xs font-serif">Sapatos</span>
+                        </div>
+                    </div>
+                    <!-- Relógios -->
+                    <div class="relative aspect-[4/5] overflow-hidden rounded-lg group">
+                        <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&amp;w=600&amp;auto=format&amp;fit=crop" alt="Relógios" class="w-full h-full object-cover grayscale-[30%]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        <div class="absolute bottom-3 left-3">
+                            <span class="text-xs font-serif">Relógios</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bottom CTA Section -->
+            <section class="px-6 py-12 flex flex-col items-center text-center">
+                <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/uploads/364ea1d4-f318-4736-ace0-eccf7a8d3577/1780429872771-8ff59e52/transparante__1_.png" alt="Crest" class="h-24 opacity-100 brightness-125 saturate-150 mb-6" style="color: rgb(255, 255, 255);">
+                <h2 class="text-3xl font-serif mb-4">Torne-se uma <br><span class="text-[#d4af37]">Referência.</span></h2>
+                <p class="text-sm text-white/60 mb-8 max-w-[280px]">
+                    Não apenas vista-se. Construa uma imagem que impõe respeito em qualquer ambiente.
                 </p>
-              </div>
+                <a 
+                    href="https://chat.whatsapp.com/KcXwQNigNwMAhQdDre3S5d?s=cl&amp;p=a&amp;ilr=2" 
+                    id="cta-bottom-whatsapp" 
+                    class="w-full py-5 bg-[#25D366] text-white font-bold uppercase tracking-widest text-sm rounded-sm active:scale-95 transition-transform shadow-xl" 
+                    style="background-color: rgb(32, 184, 88); border-width: 4px; border-style: solid; border-color: rgb(70, 175, 124); border-radius: 16px;" 
+                    onclick="fbq('track', 'CompleteRegistration');"
+                >
+                    Quero Acesso VIP Agora
+                </a>
+            </section>
+        </main>
+
+        <!-- Footer Safe Area -->
+        <footer class="shrink-0 pb-[34px] px-6 py-4 bg-[#050d09] border-t border-white/5">
+            <div class="flex justify-between items-center">
+                <p class="text-[10px] text-white/30 uppercase tracking-widest">© 2026 Estilo Old Money</p>
+                <div class="flex gap-4">
+                    <a href="#" id="footer-ig-link"><iconify-icon icon="ri:instagram-line" class="text-white/40 text-lg"></iconify-icon></a>
+                    <a href="#" id="footer-fb-link"><iconify-icon icon="mdi:facebook" class="text-white/40 text-lg"></iconify-icon></a>
+                </div>
             </div>
-
-            <div
-              class="glass p-5 rounded-[28px] flex items-center gap-4 animate-fade-up"
-              style="animation-delay: 0.3s"
-            >
-              <div
-                class="w-12 h-12 rounded-2xl bg-[#C8A46A]/10 flex items-center justify-center shrink-0"
-              >
-                <iconify-icon
-                  icon="ph:house-line-light"
-                  class="text-2xl text-[#C8A46A]"
-                ></iconify-icon>
-              </div>
-              <div>
-                <h3 class="font-bold text-[#28453F]">
-                  Achadinhos para sua casa
-                </h3>
-                <p class="text-sm text-[#6A6A6A]">
-                  Curadoria premium de objetos
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="glass p-5 rounded-[28px] flex items-center gap-4 animate-fade-up"
-              style="animation-delay: 0.4s"
-            >
-              <div
-                class="w-12 h-12 rounded-2xl bg-[#28453F]/10 flex items-center justify-center shrink-0"
-              >
-                <iconify-icon
-                  icon="ph:shopping-cart-simple-light"
-                  class="text-2xl text-[#28453F]"
-                ></iconify-icon>
-              </div>
-              <div>
-                <h3 class="font-bold text-[#28453F]">Ofertas reais</h3>
-                <p class="text-sm text-[#6A6A6A]">
-                  Economia de verdade garantida
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Social Proof -->
-        <section class="px-6 py-16 text-center">
-          <h4 class="serif text-2xl text-[#28453F] mb-6">
-            Mais economia para sua casa
-          </h4>
-
-          <div class="flex items-center justify-center -space-x-3 mb-4">
-            <img
-              src="https://i.pravatar.cc/100?u=1"
-              class="w-10 h-10 rounded-full border-2 border-white shadow-sm"
-              alt="Avatar"
-            />
-            <img
-              src="https://i.pravatar.cc/100?u=2"
-              class="w-10 h-10 rounded-full border-2 border-white shadow-sm"
-              alt="Avatar"
-            />
-            <img
-              src="https://i.pravatar.cc/100?u=3"
-              class="w-10 h-10 rounded-full border-2 border-white shadow-sm"
-              alt="Avatar"
-            />
-            <img
-              src="https://i.pravatar.cc/100?u=4"
-              class="w-10 h-10 rounded-full border-2 border-white shadow-sm"
-              alt="Avatar"
-            />
-            <div
-              class="w-10 h-10 rounded-full bg-[#C8A46A] border-2 border-white flex items-center justify-center text-[10px] text-white font-bold shadow-sm"
-            >
-              +5k
-            </div>
-          </div>
-
-          <p class="text-[#6A6A6A] font-medium mb-12">
-            <span class="text-[#28453F] font-bold">+5 mil pessoas</span>
-            recebendo promoções diariamente
-          </p>
-
-          <!-- Testimonials -->
-          <div class="space-y-6">
-            <div
-              class="bg-white border border-[#F5EFE7] p-6 rounded-3xl shadow-sm"
-            >
-              <div class="flex justify-center gap-1 mb-3">
-                <iconify-icon
-                  icon="ph:star-fill"
-                  class="text-[#C8A46A]"
-                ></iconify-icon>
-                <iconify-icon
-                  icon="ph:star-fill"
-                  class="text-[#C8A46A]"
-                ></iconify-icon>
-                <iconify-icon
-                  icon="ph:star-fill"
-                  class="text-[#C8A46A]"
-                ></iconify-icon>
-                <iconify-icon
-                  icon="ph:star-fill"
-                  class="text-[#C8A46A]"
-                ></iconify-icon>
-                <iconify-icon
-                  icon="ph:star-fill"
-                  class="text-[#C8A46A]"
-                ></iconify-icon>
-              </div>
-              <p class="text-[#28453F] italic text-sm">
-                "Economizei muito na decoração da minha sala. Os achadinhos são
-                de extremo bom gosto!"
-              </p>
-              <p
-                class="mt-3 text-[10px] uppercase tracking-widest text-[#C8A46A] font-bold"
-              >
-                Juliana M.
-              </p>
-            </div>
-
-            <div
-              class="bg-white border border-[#F5EFE7] p-6 rounded-3xl shadow-sm"
-            >
-              <div class="flex justify-center gap-1 mb-3">
-                <iconify-icon
-                  icon="ph:star-fill"
-                  class="text-[#C8A46A]"
-                ></iconify-icon>
-                <iconify-icon
-                  icon="ph:star-fill"
-                  class="text-[#C8A46A]"
-                ></iconify-icon>
-                <iconify-icon
-                  icon="ph:star-fill"
-                  class="text-[#C8A46A]"
-                ></iconify-icon>
-                <iconify-icon
-                  icon="ph:star-fill"
-                  class="text-[#C8A46A]"
-                ></iconify-icon>
-                <iconify-icon
-                  icon="ph:star-fill"
-                  class="text-[#C8A46A]"
-                ></iconify-icon>
-              </div>
-              <p class="text-[#28453F] italic text-sm">
-                "Todo dia aparece algum achadinho bom. Já comprei vários itens
-                que parecem de loja cara."
-              </p>
-              <p
-                class="mt-3 text-[10px] uppercase tracking-widest text-[#C8A46A] font-bold"
-              >
-                Ricardo S.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Final CTA / Footer Message -->
-        <section
-          class="mt-auto px-6 pt-12 pb-16 bg-[#28453F] rounded-t-[50px] text-center"
-        >
-          <p class="serif text-2xl text-white/90 mb-8 max-w-[280px] mx-auto">
-            Entre agora e aproveite antes das melhores ofertas acabarem.
-          </p>
-          <a
-            href="#"
-            id="footer-cta-link"
-            data-lead-content="Footer CTA WhatsApp"
-            class="flex items-center justify-center gap-3 bg-white text-[#28453F] py-5 px-6 rounded-2xl w-full font-black text-sm tracking-[0.1em] uppercase shadow-xl active:scale-95 transition-transform"
-          >
-            Quero entrar agora
-            <iconify-icon icon="ph:arrow-right-bold"></iconify-icon>
-          </a>
-          <div class="mt-10 flex flex-col items-center opacity-40">
-            <div
-              class="flex items-center gap-1 text-white text-[10px] uppercase tracking-[0.3em] font-bold"
-            >
-              Descontou Promo
-            </div>
-            <p class="text-white/60 text-[8px] mt-2">
-              Curadoria Premium de Achadinhos para Casa
-            </p>
-          </div>
-        </section>
-      </main>
-
-      <!-- Mobile Safe Area Padding -->
-      <div class="h-[34px] bg-[#28453F] shrink-0"></div>
+        </footer>
     </div>
-    <script>
-      const WHATSAPP_GROUP_URL =
-        'https://chat.whatsapp.com/CHWh8QapYG62TUVAEl6dyx?mode=gi_t';
 
-      function trackLeadAndRedirect(event, contentName) {
-        const target = event.currentTarget;
-        const destinationUrl = target && target.href;
-        const leadSource =
-          contentName ||
-          (target && target.dataset.leadContent) ||
-          'WhatsApp CTA';
-
-        if (typeof fbq === 'function') {
-          fbq('track', 'CompleteRegistration', {
-            content_name: leadSource,
-            destination: 'whatsapp_group',
-          });
-
-          fbq('trackCustom', 'LeadButtonClick', {
-            content_name: leadSource,
-            destination: 'whatsapp_group',
-          });
-        }
-
-        if (
-          destinationUrl &&
-          destinationUrl !== '#' &&
-          !destinationUrl.endsWith('/#')
-        ) {
-          event.preventDefault();
-          setTimeout(function () {
-            window.location.href = destinationUrl;
-          }, 700);
-        }
-      }
-
-      const heroCta = document.getElementById('hero-cta-link');
-      const footerCta = document.getElementById('footer-cta-link');
-
-      if (heroCta) {
-        heroCta.href = WHATSAPP_GROUP_URL;
-      }
-
-      if (footerCta) {
-        footerCta.href = WHATSAPP_GROUP_URL;
-      }
-
-      if (heroCta) {
-        heroCta.addEventListener('click', function (event) {
-          trackLeadAndRedirect(event, 'Hero CTA WhatsApp');
-        });
-      }
-
-      if (footerCta) {
-        footerCta.addEventListener('click', function (event) {
-          trackLeadAndRedirect(event, 'Footer CTA WhatsApp');
-        });
-      }
-    </script>
-  </body>
-</html>
+</body></html>
